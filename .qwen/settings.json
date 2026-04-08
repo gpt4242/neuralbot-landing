@@ -6,7 +6,22 @@
       "Bash(git status)",
       "Bash(git init)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(which *)",
+      "Bash(npm *)",
+      "Bash(netlify *)",
+      "Bash(true)",
+      "Bash(vercel *)",
+      "Bash(zip *)",
+      "Bash(gh *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(surge *)",
+      "Bash(brew *)",
+      "Bash(curl *)",
+      "Bash(base64 *)",
+      "Bash(git remote *)",
+      "Bash(git pull *)"
     ]
   },
   "$version": 3
