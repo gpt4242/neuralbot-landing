@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI ассистент для вашего бизнеса — автоматизируйте продажи и поддержку клиентов в Telegram 24/7">
+    <title>NeuralBot — ИИ-ассистент для малого бизнеса</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">NeuralBot</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#features">Возможности</a></li>
+                    <li><a href="#how-it-works">Как работает</a></li>
+                    <li><a href="#pricing">Тарифы</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#quiz">Тест</a></li>
+                </ul>
+                <a href="#cta" class="btn btn-primary btn-sm">Начать бесплатно</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#features" class="mobile-nav-link">Возможности</a></li>
+            <li><a href="#how-it-works" class="mobile-nav-link">Как работает</a></li>
+            <li><a href="#pricing" class="mobile-nav-link">Тарифы</a></li>
+            <li><a href="#testimonials" class="mobile-nav-link">Отзывы</a></li>
+            <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+            <li><a href="#quiz" class="mobile-nav-link">Тест</a></li>
+            <li><a href="#cta" class="btn btn-primary">Начать бесплатно</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Новое поколение бизнес-автоматизации
+                </div>
+                <h1 class="hero-title">
+                    Ваш персональный менеджер<br>
+                    <span class="gradient-text">для продаж и консультаций</span>
+                </h1>
+                <p class="hero-subtitle">
+                    AI-помощник в Telegram, обученный на ваших методиках и знаниях. Автоматически консультирует клиентов, квалифицирует лидов и закрывает сделки — пока вы занимаетесь стратегией.
+                </p>
+                <div class="hero-cta">
+                    <a href="#cta" class="btn btn-primary btn-lg">
+                        Попробовать бесплатно
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-outline btn-lg">
+                        Посмотреть демо
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">бизнесов подключено</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">без перерывов</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">3 сек</span>
+                        <span class="stat-label">среднее время ответа</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="chat-header">
+                            <div class="chat-avatar">🤖</div>
+                            <div class="chat-info">
+                                <span class="chat-name">Ваш Бизнес Бот</span>
+                                <span class="chat-status">онлайн</span>
+                            </div>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="message bot-message">
+                                Здравствуйте! 👋 Чем могу помочь?
+                            </div>
+                            <div class="message user-message">
+                                Какие у вас есть услуги?
+                            </div>
+                            <div class="message bot-message">
+                                У нас 3 основных направления:<br>
+                                ✅ Веб-разработка<br>
+                                ✅ Мобильные приложения<br>
+                                ✅ AI-интеграции<br><br>
+                                Что вас интересует?
+                            </div>
+                            <div class="message user-message">
+                                Хочу заказать сайт
+                            </div>
+                            <div class="message bot-message">
+                                Отлично! 🎉 Оформляю заявку. 
+                                Менеджер свяжется с вами в течение 5 минут!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-1">
+                    <span class="card-icon">📈</span>
+                    <div class="card-text">
+                        <span class="card-value">+47%</span>
+                        <span class="card-label">рост продаж</span>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-icon">⚡</span>
+                    <div class="card-text">
+                        <span class="card-value">0.3с</span>
+                        <span class="card-label">время ответа</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Возможности</span>
+                <h2 class="section-title">Для коучей и маркетологов, которые <span class="gradient-text">хотят масштабироваться</span></h2>
+                <p class="section-subtitle">
+                    Бот работает как опытный менеджер по продажам — знает ваши методики и закрывает сделки без вашего участия
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3 class="feature-title">Обучение на ваших данных</h3>
+                    <p class="feature-desc">
+                        Загрузите скрипты, методики, кейсы, видеоуроки — бот будет консультировать как вы, используя ваши знания и подход.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6l4 2"/></svg>
+                    </div>
+                    <h3 class="feature-title">Интеграция с CRM</h3>
+                    <p class="feature-desc">
+                        Синхронизация с вашей CRM — новые клиенты автоматически попадают в вашу базу, история переписки сохраняется.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3 class="feature-title">Аналитика продаж и лиды</h3>
+                    <p class="feature-desc">
+                        Видите в реальном времени: сколько лидов генерирует бот, стоимость каждого, конверсию в оплату, ROI.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3 class="feature-title">Автоматизация квалификации</h3>
+                    <p class="feature-desc">
+                        Бот задаёт правильные вопросы, определяет готовность клиента к покупке и отправляет горячих лидов вам.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
+                    </div>
+                    <h3 class="feature-title">Персонализированные консультации</h3>
+                    <p class="feature-desc">
+                        Бот помнит каждого клиента, его историю, интересы и дает рекомендации в соответствии с его потребностями.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                    </div>
+                    <h3 class="feature-title">Масштабирование без наёма</h3>
+                    <p class="feature-desc"
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="feature-title">Безопасность данных</h3>
+                    <p class="feature-desc">
+                        Шифрование данных, GDPR compliance, полная конфиденциальность переписки клиентов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Как это работает</span>
+                <h2 class="section-title">Запуск за <span class="gradient-text">3 простых шага</span></h2>
+                <p class="section-subtitle">
+                    От идеи до работающего бота — менее 24 часов
+                </p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Загрузите ваши данные</h3>
+                        <p class="step-desc">
+                            Отправьте боту документы, прайс-листы, инструкции, FAQ. 
+                            Мы поддерживаем PDF, DOCX, TXT, Excel и даже ссылки на сайт.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="upload-animation">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Настройте под себя</h3>
+                        <p class="step-desc">
+                            Укажите тон общения, приветствия, кнопки быстрого ответа. 
+                            Бот будет звучать как ваш лучший менеджер.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="settings-animation">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.22 4.22l1.42 1.42"/><path d="M18.36 18.36l1.42 1.42"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.22 19.78l1.42-1.42"/><path d="M18.36 5.64l1.42-1.42"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-connector">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Запустите и зарабатывайте</h3>
+                        <p class="step-desc">
+                            Подключите бота к Telegram и начните принимать заявки. 
+                            Аналитика покажет ROI уже в первую неделю.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="launch-animation">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Тарифы</span>
+                <h2 class="section-title">Выберите <span class="gradient-text">свой план</span></h2>
+                <p class="section-subtitle">
+                    Начните бесплатно. Масштабируйтесь по мере роста.
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Бесплатная пробная версия</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">0</span>
+                            <span class="price-period">/3 дня</span>
+                        </div>
+                        <p class="plan-desc">Полный доступ без ограничений</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Неограниченные сообщения
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Все функции включены
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            До 5 ботов
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Поддержка 24/7
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Отмена в любой момент
+                        </li>
+                        <li class="feature-disabled">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                            Требуется платежная карта
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn btn-outline btn-block">Начать пробный период</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Самый популярный</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Подписка</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">150</span>
+                            <span class="price-period">/мес</span>
+                        </div>
+                        <p class="plan-desc">Гибкость и масштабируемость</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Неограниченные сообщения
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            До 5 ботов
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Полная аналитика
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Безлимит документов
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Рассылки и CRM
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Приоритетная поддержка
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn btn-primary btn-block">Выбрать подписку</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="popular-badge" style="background: #10b981; color: white;">Лучшая цена</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Единоразовая покупка</h3>
+                        <div class="plan-price">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">999</span>
+                            <span class="price-period">единоразово</span>
+                        </div>
+                        <p class="plan-desc">Вечная лицензия, полная собственность</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Неограниченные сообщения
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            До 10 ботов
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Полная аналитика + API
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Кастомный дизайн бота
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Рассылки и CRM
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                            Все обновления включены
+                        </li>
+                    </ul>
+                    <a href="#cta" class="btn btn-primary btn-block">Купить единоразово</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Отзывы</span>
+                <h2 class="section-title">Нам <span class="gradient-text">доверяют</span> бизнесы</h2>
+                <p class="section-subtitle">
+                    Реальные результаты наших клиентов
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                    <p class="testimonial-text">
+                        «Самый лучший найм в истории моего коучинг-бизнеса. Бот отвечает клиентам моим голосом, держит мой уровень,
+                        генерирует 15-20 лидов в день. Продажи выросли на 3x за 2 месяца.»
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ЕП</div>
+                        <div class="author-info">
+                            <span class="author-name">Елена Петрова</span>
+                            <span class="author-role">Бизнес-коуч, аудитория 50к</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                    <p class="testimonial-text">
+                        «Я маркетолог фрилансер с 10 клиентами. С этим ботом я консультирую своих клиентов как одного человека.
+                        Интеграция с их CRM работает идеально. Горячие лиды идут напрямую, экономлю 20 часов в неделю.»
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ИС</div>
+                        <div class="author-info">
+                            <span class="author-name">Иван Смирнов</span>
+                            <span class="author-role">Growth-маркетолог, фрилансер</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        ★★★★★
+                    </div>
+                    <p class="testimonial-text">
+                        «Запустил бота за выходные. К понедельнику он уже начал квалифицировать лидов. За первый месяц 
+                        закрыл 12 клиентов через бота. Себестоимость лида упала в 5 раз. Шикарная система!»
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">АН</div>
+                        <div class="author-info">
+                            <span class="author-name">Анна Новикова</span>
+                            <span class="author-role">Тренер по продажам, 300+ учеников</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-proof-stats">
+                <div class="social-stat">
+                    <span class="social-number gradient-text">500+</span>
+                    <span class="social-label">Подключённых бизнесов</span>
+                </div>
+                <div class="social-stat">
+                    <span class="social-number gradient-text">2M+</span>
+                    <span class="social-label">Обработанных сообщений</span>
+                </div>
+                <div class="social-stat">
+                    <span class="social-number gradient-text">98%</span>
+                    <span class="social-label">Довольных клиентов</span>
+                </div>
+                <div class="social-stat">
+                    <span class="social-number gradient-text">4.9/5</span>
+                    <span class="social-label">Средняя оценка</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Частые <span class="gradient-text">вопросы</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Как быстро бот начнёт работать?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Запуск бота занимает от 2 до 24 часов. Вы загружаете данные, настраиваете параметры — и бот готов. 
+                        На тарифе «Премиум» мы помогаем с настройкой персонально.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Какие данные можно загрузить для обучения?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Практически любые: PDF, DOCX, TXT, Excel, презентации, ссылки на ваш сайт или базу знаний. 
+                        Бот проанализирует всё и будет использовать эти знания при общении с клиентами.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Что если бот не знает ответа на вопрос?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Бот честно скажет, что не знает, и предложит связаться с менеджером. При этом он запомнит ответ 
+                        и в следующий раз ответит сам. Чем больше общается — тем умнее становится.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли попробовать бесплатно?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да! Тариф «Старт» полностью бесплатный и навсегда. Вы получите 100 сообщений в месяц и базовую 
+                        аналитику. Этого хватит, чтобы оценить эффективность бота.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Как происходит оплата?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Принимаем карты, банковские переводы и оплату по счёту для юрлиц. Подписка продлевается автоматически, 
+                        но вы можете отменить в любой момент без штрафов.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Есть ли техподдержка?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, у нас есть чат поддержки и база знаний. На тарифах «Бизнес» и «Премиум» — приоритетная поддержка 
+                        с временем ответа до 1 часа. На «Премиум» — персональный менеджер.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section" id="quiz">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Подберём решение</span>
+                <h2 class="section-title">Узнайте, какой ИИ-бот <span class="gradient-text">подходит вашему бизнесу</span></h2>
+                <p class="section-subtitle">
+                    Ответьте на 5 вопросов и получите персональную рекомендацию
+                </p>
+            </div>
+            <div class="quiz-container" id="quizContainer">
+                <!-- Quiz progress -->
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 20%"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">Вопрос 1 из 5</span>
+                </div>
+
+                <!-- Question 1: Business Type -->
+                <div class="quiz-step active" data-step="1">
+                    <h3 class="quiz-question">Какая у вас сфера бизнеса?</h3>
+                    <div class="quiz-options" data-question="businessType">
+                        <label class="quiz-option">
+                            <input type="radio" name="businessType" value="retail" hidden>
+                            <span class="option-icon">🛒</span>
+                            <span class="option-text">Ритейл / Интернет-магазин</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="businessType" value="services" hidden>
+                            <span class="option-icon">💼</span>
+                            <span class="option-text">Услуги (салон, клиника, консалтинг)</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="businessType" value="food" hidden>
+                            <span class="option-icon">🍕</span>
+                            <span class="option-text">Еда / Рестораны / Доставка</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="businessType" value="education" hidden>
+                            <span class="option-icon">📚</span>
+                            <span class="option-text">Образование / Курсы</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="businessType" value="other" hidden>
+                            <span class="option-icon">🏢</span>
+                            <span class="option-text">Другое</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2: Team Size -->
+                <div class="quiz-step" data-step="2">
+                    <h3 class="quiz-question">Сколько человек обрабатывают заявки сейчас?</h3>
+                    <div class="quiz-options" data-question="teamSize">
+                        <label class="quiz-option">
+                            <input type="radio" name="teamSize" value="solo" hidden>
+                            <span class="option-icon">👤</span>
+                            <span class="option-text">Только я</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="teamSize" value="small" hidden>
+                            <span class="option-icon">👥</span>
+                            <span class="option-text">2-5 человек</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="teamSize" value="medium" hidden>
+                            <span class="option-icon">👨‍💼</span>
+                            <span class="option-text">6-15 человек</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="teamSize" value="large" hidden>
+                            <span class="option-icon">🏢</span>
+                            <span class="option-text">Более 15 человек</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3: Pain Point -->
+                <div class="quiz-step" data-step="3">
+                    <h3 class="quiz-question">Что для вас самая большая проблема?</h3>
+                    <div class="quiz-options" data-question="painPoint">
+                        <label class="quiz-option">
+                            <input type="radio" name="painPoint" value="missed" hidden>
+                            <span class="option-icon">😰</span>
+                            <span class="option-text">Теряем клиентов — не успеваем отвечать</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="painPoint" value="repeat" hidden>
+                            <span class="option-icon">🔄</span>
+                            <span class="option-text">Одни и те же вопросы по 100 раз</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="painPoint" value="night" hidden>
+                            <span class="option-icon">🌙</span>
+                            <span class="option-text">Ночью никто не отвечает клиентам</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="painPoint" value="scale" hidden>
+                            <span class="option-icon">📈</span>
+                            <span class="option-text">Хочу масштабировать бизнес без найма</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4: Messages Volume -->
+                <div class="quiz-step" data-step="4">
+                    <h3 class="quiz-question">Сколько сообщений в день получаете от клиентов?</h3>
+                    <div class="quiz-options" data-question="messagesVolume">
+                        <label class="quiz-option">
+                            <input type="radio" name="messagesVolume" value="low" hidden>
+                            <span class="option-icon">💬</span>
+                            <span class="option-text">До 20 сообщений</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="messagesVolume" value="medium" hidden>
+                            <span class="option-icon">💬💬</span>
+                            <span class="option-text">20-50 сообщений</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="messagesVolume" value="high" hidden>
+                            <span class="option-icon">💬💬💬</span>
+                            <span class="option-text">50-100 сообщений</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="messagesVolume" value="very-high" hidden>
+                            <span class="option-icon">🔥</span>
+                            <span class="option-text">Более 100 сообщений</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5: Budget -->
+                <div class="quiz-step" data-step="5">
+                    <h3 class="quiz-question">Какой бюджет готовы выделить на автоматизацию?</h3>
+                    <div class="quiz-options" data-question="budget">
+                        <label class="quiz-option">
+                            <input type="radio" name="budget" value="free" hidden>
+                            <span class="option-icon">🆓</span>
+                            <span class="option-text">Хочу попробовать бесплатно</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="budget" value="low" hidden>
+                            <span class="option-icon">💰</span>
+                            <span class="option-text">До 3,000₽/мес</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="budget" value="medium" hidden>
+                            <span class="option-icon">💰💰</span>
+                            <span class="option-text">3,000-8,000₽/мес</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="budget" value="high" hidden>
+                            <span class="option-icon">💰💰💰</span>
+                            <span class="option-text">Более 8,000₽/мес — нужен максимум</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="quiz-nav">
+                    <button class="btn btn-outline btn-lg" id="quizPrev" style="display: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        Назад
+                    </button>
+                    <button class="btn btn-primary btn-lg" id="quizNext">
+                        Далее
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </button>
+                </div>
+
+                <!-- Contact Form (shown after quiz) -->
+                <div class="quiz-result" id="quizResult" style="display: none;">
+                    <div class="result-card">
+                        <div class="result-icon">🎯</div>
+                        <h3 class="result-title">Отлично! Мы подобрали решение</h3>
+                        <p class="result-desc">Оставьте контакты и получите персональную рекомендацию с расчётом ROI</p>
+                        <form class="quiz-form" id="quizForm">
+                            <div class="form-group">
+                                <input type="text" name="name" id="quizName" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" id="quizPhone" placeholder="Телефон или @username в Telegram" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="quizEmail" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="business" id="quizBusiness" placeholder="Название компании или сайта">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="quizSubmitBtn">
+                                Получить рекомендацию
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </button>
+                        </form>
+                        <p class="cta-note">
+                            Бесплатно. Без обязательств. Ответим в течение 30 минут.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Success Message -->
+                <div class="quiz-success" id="quizSuccess" style="display: none;">
+                    <div class="success-icon">✅</div>
+                    <h3>Заявка отправлена!</h3>
+                    <p>Мы подготовим персональную рекомендацию и свяжемся с вами в течение 30 минут в рабочее время.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Готовы автоматизировать <span class="gradient-text">ваш бизнес?</span></h2>
+                <p class="cta-subtitle">
+                    Подключите бесплатного бота за 5 минут и посмотрите, как растёт ваш бизнес
+                </p>
+                <a href="#quiz" class="btn btn-primary btn-lg btn-block">
+                    Пройти тест и получить рекомендацию
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <p class="cta-note" style="margin-top: 16px;">
+                    Бесплатно. Без обязательств. Персональная рекомендация за 2 минуты.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">NeuralBot</span>
+                    </a>
+                    <p>ИИ-ассистент для малого бизнеса. Автоматизируйте продажи и поддержку в Telegram.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Продукт</h4>
+                        <ul>
+                            <li><a href="#features">Возможности</a></li>
+                            <li><a href="#pricing">Тарифы</a></li>
+                            <li><a href="#">Документация</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Поддержка</h4>
+                        <ul>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NeuralBot. Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
