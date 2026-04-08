@@ -21,7 +21,8 @@
       "Bash(curl *)",
       "Bash(base64 *)",
       "Bash(git remote *)",
-      "Bash(git pull *)"
+      "Bash(git pull *)",
+      "Bash(sleep *)"
     ]
   },
   "$version": 3
